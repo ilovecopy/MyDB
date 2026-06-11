@@ -1,0 +1,15 @@
+package com.utils.mydb.common;
+
+public class Error {
+    private Error() {
+        /* This utility class should not be instantiated */
+    }
+
+    public static final Exception CACHE_FULL_EXCEPTION = new Exception("Cache full.");
+    public static final Exception FILE_EXSIST_EXCEPTION = new Exception("File already exist.");
+    public static final Exception FILE_NOT_EXIST_EXCEPTION = new Exception("File not exist.");
+    public static final Exception FILE_CANNOT_READ_OR_WRITE_EXCEPTION = new Exception("File cannot read or write.");
+
+    public static final Exception MEMORY_TO_SMALL_EXCEPTION = new Exception("Memory is too small.");
+
+}

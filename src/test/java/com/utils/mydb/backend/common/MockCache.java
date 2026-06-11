@@ -1,0 +1,17 @@
+package com.utils.mydb.backend.common;
+
+public class MockCache extends AbstractCache<Long> {
+    public MockCache() {
+        super(50);
+    }
+
+    @Override
+    protected Long getForCache(long key) {
+        return key;
+    }
+
+    @Override
+    protected void releaseForCache(Long obj) {
+    }
+}
+
