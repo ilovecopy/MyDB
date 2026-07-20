@@ -37,7 +37,7 @@ public interface PageCache {
         File f = new File(path + PageCacheImpl.DB_SUFFIX);
         try {
             if (!f.createNewFile()) {
-                Panic.panic(Error.FILE_EXSIST_EXCEPTION);
+                Panic.panic(Error.FILE_EXIST_EXCEPTION);
             }
         } catch (Exception e) {
             Panic.panic(e);
