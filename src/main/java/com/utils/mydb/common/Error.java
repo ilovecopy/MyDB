@@ -1,6 +1,8 @@
 package com.utils.mydb.common;
 
+
 public class Error {
+
 
     private Error() {
         /* This utility class should not be instantiated */
@@ -16,6 +18,13 @@ public class Error {
     public static final Exception MEMORY_TO_SMALL_EXCEPTION = new Exception("Memory is too small.");
     public static final Exception DATA_TOO_LARGE_EXCEPTION = new Exception("Data is too large.");
     public static final Exception DATABASE_BUSY_EXCEPTION = new Exception("Database is too busy.");
+
     //tm
     public static final Exception BAD_XID_FILE_EXCEPTION = new Exception("Bad xid file.");
+
+    //vm
+    public static final Exception DEAD_LOCK_EXCEPTION = new Exception("Dead lock detected");
+    public static final Exception NULL_ENTRY_EXCEPTION = new Exception("Null entry");
+    public static final Exception CONCURRENT_UPDATE_EXCEPTION = new Exception("Concurrent update exception.");
+
 }
