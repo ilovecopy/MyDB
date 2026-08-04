@@ -35,10 +35,10 @@ public class PageIndex {
         lock.lock();
         try {
             int index = freeSpace / THRESHOLD;
-            if (index < THRESHOLD) {
+            if (index < INTERVALS_NO) {
                 index++;
             }
-            while (index <= THRESHOLD) {
+            while (index <= INTERVALS_NO) {
                 if (lists[index].isEmpty()) {
                     index++;
                     continue;
